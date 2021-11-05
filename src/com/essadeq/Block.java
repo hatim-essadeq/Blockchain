@@ -12,7 +12,7 @@ public class Block {
         this.previousHash = previousHash;
 
         // Generate Hash from previous block Data ana Hash
-        Object[] previousBlock = {transactions, previousHash};
+        Object[] previousBlock = {Arrays.hashCode(transactions), previousHash};
         this.hash = Arrays.hashCode(previousBlock);
 
     }

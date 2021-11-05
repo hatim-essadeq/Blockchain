@@ -4,7 +4,7 @@ public class Main {
     Blockchain blockchain = new Blockchain();
 
     Main() {
-        String[] transaction1 = {"Hatim send 10 bitcoin to Houssam"};
+        String[] transaction1 = {"Hatim send 10 bitcoin to Houssam "};
         Block block1 = new Block(transaction1, 0);
         blockchain.add(block1);
 
